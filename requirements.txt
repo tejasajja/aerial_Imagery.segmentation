@@ -1,0 +1,10 @@
+#required modules
+opencv-python
+matplotlib
+tqdm
+glob
+patchify
+shutil
+sys
+PIL
+scikit-learn

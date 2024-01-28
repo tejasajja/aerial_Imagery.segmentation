@@ -93,7 +93,7 @@ for idx, (X, Y) in tqdm(enumerate(zip(images, masks)), total=len(images)):
             image_dataset.append(single_patch_img)
 
     mask = cv2.imread(Y)
-    mask = cv2.cvtColor(mask, cv2.COLOR_BGR2RGB)
+    #mask = cv2.cvtColor(mask, cv2.COLOR_BGR2RGB)
     SIZE_X = (mask.shape[1] // patch_size) * patch_size  # Nearest size divisible by our patch size
     SIZE_Y = (mask.shape[0] // patch_size) * patch_size  # Nearest size divisible by our patch size
     mask = Image.fromarray(mask)
